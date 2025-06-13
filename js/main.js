@@ -116,8 +116,15 @@ const reviews = [
 
 // Function to create review cards
 function createReviewCard(review) {
+    // Create a slug from the product title for the ID
+    const slug = review.title.toLowerCase()
+        .replace(/[^\w\s-]/g, '') // Remove non-word chars
+        .replace(/\s+/g, '-')     // Replace spaces with -
+        .replace(/--+/g, '-')      // Replace multiple - with single -
+        .replace(/^-+|-+$/g, '');  // Remove leading/trailing -
+        
     return `
-        <article class="review-card">
+        <article class="review-card" id="${slug}">
             <div class="review-image-container">
                 <img src="${review.image}" alt="${review.title}" class="review-image" loading="lazy">
             </div>
