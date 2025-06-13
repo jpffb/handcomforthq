@@ -126,8 +126,134 @@ body {
 /* Review Grid */
 .review-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 2rem;
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 0 1rem;
+}
+
+/* Review Card Styles */
+.review-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.review-image-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.review-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.review-card:hover .review-image {
+    transform: scale(1.05);
+}
+
+.review-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.review-content h3 {
+    margin: 0 0 0.75rem 0;
+    font-size: 1.25rem;
+    color: var(--dark-gray);
+}
+
+.review-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.review-rating {
+    display: flex;
+    align-items: center;
+    color: #FFB800;
+    font-size: 1.1rem;
+}
+
+.rating-text {
+    margin-left: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.review-price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.review-description {
+    color: #555;
+    margin: 0 0 1.5rem 0;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.review-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+.review-button:hover {
+    background-color: #3d8b40;
+    color: white;
+}
+
+.button-arrow {
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.review-button:hover .button-arrow {
+    transform: translateX(4px);
+}
+
+@media (max-width: 768px) {
+    .review-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .review-card {
+        margin-bottom: 1.5rem;
+    }
 }
 
 /* Guide Grid */
@@ -153,7 +279,8 @@ body {
 footer {
     background-color: var(--dark-gray);
     color: white;
-    padding: 4rem 0 2rem;
+    padding: 3rem 0 0;
+    margin-top: 4rem;
 }
 
 .footer-content {
@@ -161,14 +288,130 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     margin-bottom: 2rem;
+    padding: 0 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto 2rem;
 }
 
 .footer-section h3 {
+    color: white;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.footer-section h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+.footer-section p {
+    color: #ccc;
+    line-height: 1.6;
     margin-bottom: 1rem;
 }
 
 .footer-section ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-section a {
+    color: #ddd;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.footer-section a:hover {
+    color: var(--primary-color);
+    transform: translateX(5px);
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 1.5rem;
+    text-align: center;
+    border-top: 1px solid #333;
+}
+
+.footer-bottom p {
+    margin: 0.5rem 0;
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+/* Privacy Policy Page */
+.privacy-policy {
+    padding: 4rem 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.privacy-policy h1 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.privacy-policy h2 {
+    color: var(--dark-gray);
+    margin: 3rem 0 1.5rem;
+    font-size: 1.6rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.privacy-policy p, 
+.privacy-policy ul, 
+.privacy-policy li {
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 1.2rem;
+}
+
+.privacy-policy ul {
+    padding-left: 1.8rem;
+}
+
+.privacy-policy ul li {
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.privacy-policy ul li::before {
+    content: '•';
+    color: var(--primary-color);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Amazon Disclosure */
+.disclosure {
+    font-size: 0.85rem;
+    color: #666;
+    margin: 2rem 0 0;
+    padding: 1rem;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 6px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .footer-section a {

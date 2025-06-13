@@ -37,38 +37,43 @@ const reviewGrid = document.querySelector('.review-grid');
 const reviews = [
     {
         title: "Logitech MX Vertical",
-        image: "https://images.unsplash.com/photo-1588670319611-703f83050f8d?w=400",
+        image: "https://picsum.photos/id/3/800/600",
         rating: 4.5,
-        price: "$99.99",
-        affiliateLink: "https://www.amazon.com/dp/B07V79R5QD"
+        price: "£89.99",
+        description: "Advanced ergonomic mouse with vertical design to reduce wrist strain",
+        affiliateLink: "https://www.amazon.co.uk/Logitech-MX-Vertical-Ergonomic-Mouse/dp/B07FNJB8TT/"
     },
     {
         title: "Microsoft Sculpt Ergonomic",
-        image: "https://images.unsplash.com/photo-1590105508594-00f273b0f91a?w=400",
+        image: "https://picsum.photos/id/24/800/600",
         rating: 4.2,
-        price: "$79.99",
-        affiliateLink: "https://www.amazon.com/dp/B00D7Q92N0"
+        price: "£69.99",
+        description: "Split keyboard with natural arc design for comfortable typing",
+        affiliateLink: "https://www.amazon.co.uk/Microsoft-5KV-00015-Sculpt-Ergonomic-Desktop/dp/B00D7DHD9U/"
     },
     {
         title: "Anker Vertical Mouse",
-        image: "https://images.unsplash.com/photo-1588670319611-703f83050f8d?w=400",
+        image: "https://picsum.photos/id/40/800/600",
         rating: 4.4,
-        price: "$49.99",
-        affiliateLink: "https://www.amazon.com/dp/B085575YD4"
+        price: "£39.99",
+        description: "Affordable vertical mouse with adjustable DPI settings",
+        affiliateLink: "https://www.amazon.co.uk/Anker-Vertical-Ergonomic-Optical-Comfortable/dp/B07FNJ3PZJ/"
     },
     {
-        title: "Ergodox EZ Keyboard",
-        image: "https://images.unsplash.com/photo-1590105508594-00f273b0f91a?w=400",
-        rating: 4.8,
-        price: "$299.99",
-        affiliateLink: "https://www.amazon.com/dp/B08KQ22ZB7"
+        title: "Perixx PERIMICE-712",
+        image: "https://picsum.photos/id/48/800/600",
+        rating: 4.6,
+        price: "£24.99",
+        description: "Ergonomic vertical mouse designed to reduce wrist strain",
+        affiliateLink: "https://www.amazon.co.uk/Perixx-PERIMICE-712-Wireless-Ergonomic-Programmable/dp/B00BIFNTMC/"
     },
     {
-        title: "Wrist Rest Pad",
-        image: "https://images.unsplash.com/photo-1588670319611-703f83050f8d?w=400",
+        title: "Gel Wrist Rest Pad",
+        image: "https://picsum.photos/id/60/800/600",
         rating: 4.7,
-        price: "$24.99",
-        affiliateLink: "https://www.amazon.com/dp/B0844K676R"
+        price: "£19.99",
+        description: "Memory foam wrist rest with breathable fabric cover",
+        affiliateLink: "https://www.amazon.co.uk/Ergonomic-Keyboard-Computer-Notebooks-Anti-Slip/dp/B07P5HSTP5/"
     }
 ];
 
@@ -76,14 +81,23 @@ const reviews = [
 function createReviewCard(review) {
     return `
         <article class="review-card">
-            <img src="${review.image}" alt="${review.title}" class="review-image">
-            <h3>${review.title}</h3>
-            <div class="review-rating">
-                ${'★'.repeat(Math.floor(review.rating))}
-                ${review.rating % 1 ? '☆' : ''}
+            <div class="review-image-container">
+                <img src="${review.image}" alt="${review.title}" class="review-image" loading="lazy">
             </div>
-            <p class="review-price">${review.price}</p>
-            <a href="${review.affiliateLink}" class="review-button">Read Review</a>
+            <div class="review-content">
+                <h3>${review.title}</h3>
+                <div class="review-meta">
+                    <div class="review-rating">
+                        ${'★'.repeat(Math.floor(review.rating))}${review.rating % 1 ? '☆' : ''}
+                        <span class="rating-text">${review.rating}/5.0</span>
+                    </div>
+                    <div class="review-price">${review.price}</div>
+                </div>
+                <p class="review-description">${review.description}</p>
+                <a href="${review.affiliateLink}" target="_blank" rel="noopener noreferrer" class="review-button">
+                    View on Amazon <span class="button-arrow">→</span>
+                </a>
+            </div>
         </article>
     `;
 }
