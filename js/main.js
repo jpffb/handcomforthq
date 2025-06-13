@@ -37,7 +37,7 @@ const reviewGrid = document.querySelector('.review-grid');
 const reviews = [
     {
         title: "Logitech MX Master 3S",
-        image: "https://picsum.photos/id/3/800/600",  // Placeholder - will replace with actual product image
+        image: "https://m.media-amazon.com/images/I/61XDeaOrqKL._AC_SL1500_.jpg",
         rating: 4.2,
         price: "£39.99",
         description: "Wireless Performance Mouse with Ultra-fast Scrolling, Ergonomic Design, 8K DPI, Customizable Buttons, USB-C, Bluetooth, 3-Device Control, Compatible with Windows, macOS, iPadOS - Graphite",
@@ -48,7 +48,7 @@ const reviews = [
             "Multi-Device & Multi-OS: Connect up to 3 devices simultaneously via Bluetooth or the included USB receiver",
             "Customizable Buttons & Gestures: 7 buttons and a gesture button for personalized control"
         ],
-        affiliateLink: "https://www.amazon.co.uk/Logitech-Bluetooth-Multi-Surface-Hyper-Fast-Rechargeable/dp/B07W5JKHGH/"
+        affiliateLink: "https://amzn.to/4jSqcbZ"
     },
     {
         title: "Microsoft Sculpt Ergonomic",
