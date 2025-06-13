@@ -37,7 +37,7 @@ const reviewGrid = document.querySelector('.review-grid');
 const reviews = [
     {
         title: "Logitech MX Master 3S",
-        image: "https://i.ibb.co/0jZ7pXK/logitech-mx-master-3s.jpg",
+        image: "https://picsum.photos/id/3/800/600",  // Placeholder - will replace with actual product image
         rating: 4.2,
         price: "£39.99",
         description: "Wireless Performance Mouse with Ultra-fast Scrolling, Ergonomic Design, 8K DPI, Customizable Buttons, USB-C, Bluetooth, 3-Device Control, Compatible with Windows, macOS, iPadOS - Graphite",
