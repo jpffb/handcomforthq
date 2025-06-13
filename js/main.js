@@ -36,6 +36,21 @@ const reviewGrid = document.querySelector('.review-grid');
 
 const reviews = [
     {
+        title: "Logitech Wave Keys Wireless Ergonomic Keyboard",
+        image: "https://m.media-amazon.com/images/I/71k3fJh6WVL._AC_SL1500_.jpg", // Will update with correct image URL
+        rating: 4.6,
+        price: "£49.99",
+        description: "Wireless Ergonomic Keyboard with Cushioned Palm Rest, Comfortable Natural Typing, Easy-Switch, Bluetooth, Logi Bolt Receiver, for Multi-OS, Windows/Mac, UK English QWERTY - Graphite",
+        features: [
+            "Wave Design: Contoured keyframe with curved key rows follows the natural shape of your fingertips",
+            "Cushioned Palm Rest: Integrated palm rest provides comfortable support for your hands and wrists",
+            "Wireless Connectivity: Connect via Bluetooth or Logi Bolt USB receiver with Easy-Switch between up to 3 devices",
+            "Multi-Device: Works with Windows, macOS, iPadOS, Chrome OS, and Linux (Bluetooth 5.1 required)",
+            "Long Battery Life: Up to 3 years of battery life with standard AA batteries (may vary based on usage)"
+        ],
+        affiliateLink: "https://amzn.to/4l7OFeo"
+    },
+    {
         title: "Wrist Support for Office & Gaming",
         image: "https://m.media-amazon.com/images/I/71k3fJh6WVL._AC_SL1500_.jpg",
         rating: 4.4,
