@@ -36,21 +36,6 @@ const reviewGrid = document.querySelector('.review-grid');
 
 const reviews = [
     {
-        title: "Nulaxy Laptop Stand, Ergonomic Laptop Riser",
-        image: "https://m.media-amazon.com/images/I/61uF6y5r0iL._AC_SL1500_.jpg",
-        rating: 4.4,
-        price: "£35.99",
-        description: "Laptop Stand for Desk, Adjustable Laptop Riser, Ergonomic Laptop Stand for MacBook, MacBook Pro, Air, Dell, HP, Lenovo, 4-15.6\" Laptops, Black - C2",
-        features: [
-            "ERGONOMIC DESIGN: Elevates your laptop to eye level to improve posture and reduce neck, shoulder, and back pain during long working hours",
-            "STURDY & STABLE: Features a durable aluminum alloy construction with a solid base that keeps your laptop secure and stable",
-            "ADJUSTABLE HEIGHT: 6 adjustable height settings from 1.8 to 7.1 inches to find your perfect viewing angle",
-            "IMPROVED AIRFLOW: Open design helps dissipate heat and prevents your laptop from overheating",
-            "UNIVERSAL COMPATIBILITY: Fits laptops from 4 to 15.6 inches, including MacBook, MacBook Pro, Air, Dell, HP, Lenovo, and more"
-        ],
-        affiliateLink: "https://amzn.to/4l7OFeo"
-    },
-    {
         title: "Wrist Support for Office & Gaming",
         image: "https://m.media-amazon.com/images/I/71k3fJh6WVL._AC_SL1500_.jpg",
         rating: 4.4,
