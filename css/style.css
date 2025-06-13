@@ -99,6 +99,37 @@ body {
     line-height: 1.6;
 }
 
+.featured-product .key-features {
+    margin: 1.5rem 0;
+}
+
+.featured-product .key-features p {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.featured-product .key-features ul {
+    padding-left: 1.5rem;
+    margin: 0.5rem 0 1rem;
+}
+
+.featured-product .key-features li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+    color: #555;
+    position: relative;
+}
+
+.featured-product .key-features li:before {
+    content: "•";
+    color: var(--primary-color);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
 .featured-product .cta-button {
     display: inline-flex;
     align-items: center;
