@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ergonomic Mice - HandComfortHQ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .product-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+        .price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin: 0.5rem 0;
+        }
+        .btn-primary {
+            display: inline-block;
+            background-color: #4a90e2;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #357abd;
+        }
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .benefit {
+            text-align: center;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        .benefit i {
+            font-size: 2.5rem;
+            color: #4a90e2;
+            margin-bottom: 1rem;
+        }
+        .page-header {
+            background: #4a90e2;
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .page-header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">HandComfortHQ</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mice.html" style="color: #4a90e2; font-weight: bold;">Mice</a></li>
+                <li><a href="keyboards.html">Keyboards</a></li>
+                <li><a href="wrist-supports.html">Wrist Supports</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Ergonomic Mice</h1>
+            <p class="subtitle">Discover the best ergonomic mice designed for comfort and productivity</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="product-category">
+            <h2>Featured Ergonomic Mice</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/61XlWqQyVmL._AC_SL1500_.jpg" alt="Logitech MX Master 3S" class="product-image">
+                    <h3>Logitech MX Master 3S</h3>
+                    <p class="price">£99.99</p>
+                    <p class="description">Advanced wireless mouse with ultra-fast scrolling and ergonomic design</p>
+                    <a href="https://www.amazon.co.uk/Logitech-Master-Advanced-Wireless-Mouse/dp/B09HM94VDS/" target="_blank" class="btn-primary">View on Amazon</a>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/61UxfWKfInL._AC_SL1500_.jpg" alt="Logitech MX Vertical" class="product-image">
+                    <h3>Logitech MX Vertical</h3>
+                    <p class="price">£89.99</p>
+                    <p class="description">Advanced ergonomic mouse with 57° vertical orientation</p>
+                    <a href="https://www.amazon.co.uk/Logitech-Vertical-Ergonomic-Wireless-Connection/dp/B07FNJ3PZJ/" target="_blank" class="btn-primary">View on Amazon</a>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/71k3fJh6WVL._AC_SL1500_.jpg" alt="Microsoft Sculpt Ergonomic Mouse" class="product-image">
+                    <h3>Microsoft Sculpt Ergonomic</h3>
+                    <p class="price">£39.99</p>
+                    <p class="description">Comfortable mouse with a sculpted design and blue track technology</p>
+                    <a href="https://www.amazon.co.uk/Microsoft-5KV-00015-Sculpt-Ergonomic-Desktop/dp/B00D7DHD9U/" target="_blank" class="btn-primary">View on Amazon</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <h2>Why Choose an Ergonomic Mouse?</h2>
+            <div class="benefits-grid">
+                <div class="benefit">
+                    <i class="fas fa-hand-paper"></i>
+                    <h3>Reduced Strain</h3>
+                    <p>Helps prevent repetitive strain injuries and carpal tunnel syndrome</p>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>Better Posture</h3>
+                    <p>Encourages a more natural hand and wrist position</p>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Improved Comfort</h3>
+                    <p>Reduces muscle fatigue during long computing sessions</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 HandComfortHQ. All rights reserved.</p>
+            <p>As an Amazon Associate, we earn from qualifying purchases.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

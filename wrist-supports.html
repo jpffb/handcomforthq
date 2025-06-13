@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Wrist Supports - HandComfortHQ</title>
+    <meta name="description" content="Discover the best wrist supports for comfort and pain relief. Expert reviews of top wrist supports to prevent hand and wrist pain.">
+    <link rel="stylesheet" href="/css/style.css?v=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="logo">HandComfortHQ</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="mice.html">Mice</a></li>
+                <li><a href="keyboards.html">Keyboards</a></li>
+                <li><a href="wrist-supports.html" style="color: #4a90e2; font-weight: bold;">Wrist Supports</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="category-header">
+        <div class="container">
+            <h1>Best Wrist Supports</h1>
+            <p>Expertly reviewed wrist supports to prevent hand and wrist pain</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="reviews" class="section">
+            <div class="container">
+                <h2>Top Wrist Supports</h2>
+                <div class="review-grid" id="wrist-supports-grid">
+                    <!-- Wrist support reviews will be dynamically populated -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>HandComfortHQ</h3>
+                    <p>Your trusted source for ergonomic solutions</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="mice.html">Mice</a></li>
+                        <li><a href="keyboards.html">Keyboards</a></li>
+                        <li><a href="wrist-supports.html">Wrist Supports</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 HandComfortHQ. All rights reserved.</p>
+                <p>As an Amazon Associate, we earn from qualifying purchases made through our links.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set the current category for this page
+        window.currentCategory = 'wrist-supports';
+    </script>
+    <script src="js/main.js" defer></script>
+    <script>
+        // Load only wrist support products
+        document.addEventListener('DOMContentLoaded', function() {
+            const wristSupportsGrid = document.getElementById('wrist-supports-grid');
+            if (wristSupportsGrid) {
+                // This will be populated by the main.js module
+                window.currentCategory = 'wrist-supports';
+            }
+        });
+    </script>
+</body>
+</html>
