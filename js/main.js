@@ -34,28 +34,41 @@ window.addEventListener('scroll', () => {
 // Add dynamic content loading for reviews
 const reviewGrid = document.querySelector('.review-grid');
 
-// Sample review data (replace with actual data later)
 const reviews = [
     {
-        title: "Logitech MX Vertical Review",
-        image: "images/mx-vertical.jpg",
+        title: "Logitech MX Vertical",
+        image: "https://images.unsplash.com/photo-1588670319611-703f83050f8d?w=400",
         rating: 4.5,
         price: "$99.99",
-        affiliateLink: "#"
+        affiliateLink: "https://www.amazon.com/dp/B07V79R5QD"
     },
     {
-        title: "Microsoft Sculpt Ergonomic Review",
-        image: "images/sculpt.jpg",
+        title: "Microsoft Sculpt Ergonomic",
+        image: "https://images.unsplash.com/photo-1590105508594-00f273b0f91a?w=400",
         rating: 4.2,
         price: "$79.99",
-        affiliateLink: "#"
+        affiliateLink: "https://www.amazon.com/dp/B00D7Q92N0"
     },
     {
-        title: "Anker Vertical Mouse Review",
-        image: "images/anker.jpg",
+        title: "Anker Vertical Mouse",
+        image: "https://images.unsplash.com/photo-1588670319611-703f83050f8d?w=400",
         rating: 4.4,
         price: "$49.99",
-        affiliateLink: "#"
+        affiliateLink: "https://www.amazon.com/dp/B085575YD4"
+    },
+    {
+        title: "Ergodox EZ Keyboard",
+        image: "https://images.unsplash.com/photo-1590105508594-00f273b0f91a?w=400",
+        rating: 4.8,
+        price: "$299.99",
+        affiliateLink: "https://www.amazon.com/dp/B08KQ22ZB7"
+    },
+    {
+        title: "Wrist Rest Pad",
+        image: "https://images.unsplash.com/photo-1588670319611-703f83050f8d?w=400",
+        rating: 4.7,
+        price: "$24.99",
+        affiliateLink: "https://www.amazon.com/dp/B0844K676R"
     }
 ];
 
