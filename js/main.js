@@ -38,8 +38,8 @@ const reviews = [
     {
         title: "Wrist Support for Office & Gaming",
         image: "https://m.media-amazon.com/images/I/71k3fJh6WVL._AC_SL1500_.jpg",
-        rating: 4.3,
-        price: "£12.99",
+        rating: 4.4,
+        price: "£9.99",
         description: "Ergonomic Wrist Rest Support for Office Workers and Gamers - Memory Foam Padding - Non-Slip Base - Comfortable for Long Hours of Use",
         features: [
             "Ergonomic Design: Provides optimal support to reduce wrist strain during long hours of computer use",
