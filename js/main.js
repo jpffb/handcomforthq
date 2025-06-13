@@ -36,6 +36,21 @@ const reviewGrid = document.querySelector('.review-grid');
 
 const reviews = [
     {
+        title: "Logitech MX Master 3S (Grey)",
+        image: "https://m.media-amazon.com/images/I/61XDeaOrqKL._AC_SL1500_.jpg",
+        rating: 4.2,
+        price: "£39.99",
+        description: "Wireless Performance Mouse with Ultra-fast Scrolling, Ergonomic Design, 8K DPI, Customizable Buttons, USB-C, Bluetooth, 3-Device Control, Compatible with Windows, macOS, iPadOS - Grey",
+        features: [
+            "MagSpeed™ Electromagnetic Scrolling: Ultra-fast 1,000 fps, 90% less noise, and precise stop on click",
+            "8K DPI Optical Sensor: Ultra-precise tracking on virtually any surface, even glass (4mm thickness)",
+            "Ergonomic Design: Perfectly sculpted shape and thumb rest for maximum comfort",
+            "Multi-Device & Multi-OS: Connect up to 3 devices simultaneously via Bluetooth or the included USB receiver",
+            "Customizable Buttons & Gestures: 7 buttons and a gesture button for personalized control"
+        ],
+        affiliateLink: "https://amzn.to/43Pro9K"
+    },
+    {
         title: "Logitech MX Master 3S",
         image: "/images/logitech-mx-master-3s.jpg",
         rating: 4.2,
