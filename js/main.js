@@ -36,17 +36,17 @@ const reviewGrid = document.querySelector('.review-grid');
 
 const reviews = [
     {
-        title: "Logitech MX Master 3S (Grey)",
-        image: "https://m.media-amazon.com/images/I/61XDeaOrqKL._AC_SL1500_.jpg",
-        rating: 4.2,
-        price: "£39.99",
-        description: "Wireless Performance Mouse with Ultra-fast Scrolling, Ergonomic Design, 8K DPI, Customizable Buttons, USB-C, Bluetooth, 3-Device Control, Compatible with Windows, macOS, iPadOS - Grey",
+        title: "Wrist Support for Office & Gaming",
+        image: "https://m.media-amazon.com/images/I/71k3fJh6WVL._AC_SL1500_.jpg",
+        rating: 4.3,
+        price: "£12.99",
+        description: "Ergonomic Wrist Rest Support for Office Workers and Gamers - Memory Foam Padding - Non-Slip Base - Comfortable for Long Hours of Use",
         features: [
-            "MagSpeed™ Electromagnetic Scrolling: Ultra-fast 1,000 fps, 90% less noise, and precise stop on click",
-            "8K DPI Optical Sensor: Ultra-precise tracking on virtually any surface, even glass (4mm thickness)",
-            "Ergonomic Design: Perfectly sculpted shape and thumb rest for maximum comfort",
-            "Multi-Device & Multi-OS: Connect up to 3 devices simultaneously via Bluetooth or the included USB receiver",
-            "Customizable Buttons & Gestures: 7 buttons and a gesture button for personalized control"
+            "Ergonomic Design: Provides optimal support to reduce wrist strain during long hours of computer use",
+            "Premium Memory Foam: High-density foam offers superior comfort and retains its shape over time",
+            "Breathable Fabric: Soft, breathable material keeps your wrists cool and comfortable",
+            "Non-Slip Base: Stays firmly in place during use, preventing unwanted movement",
+            "Versatile Use: Perfect for office work, gaming, programming, and other computer-based activities"
         ],
         affiliateLink: "https://amzn.to/43Pro9K"
     },
