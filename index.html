@@ -3,115 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HandComfortHQ - Ergonomic Solutions for Hand and Wrist Pain</title>
+    <title>HandComfortHQ - Expert Ergonomic Solutions for Hand & Wrist Pain</title>
     <meta name="description" content="Discover the best ergonomic solutions for hand and wrist pain. Expert reviews of ergonomic mice, keyboards, wrist supports, and office equipment to improve your workspace comfort.">
-    <link rel="stylesheet" href="/css/style.css?v=1.0">
+    <link rel="stylesheet" href="/css/style.css?v=2.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <a href="/" class="logo">HandComfortHQ</a>
+            <a href="/" class="logo">
+                <span class="logo-icon"><i class="fas fa-hand-holding-heart"></i></span>
+                HandComfortHQ
+            </a>
             <ul class="nav-links">
-                <li><a href="mice.html">Mice</a></li>
+                <li><a href="/" class="active">Home</a></li>
+                <li><a href="mice.html">Ergonomic Mice</a></li>
                 <li><a href="keyboards.html">Keyboards</a></li>
                 <li><a href="wrist-supports.html">Wrist Supports</a></li>
             </ul>
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <header class="hero">
         <div class="container">
-            <h1>Ergonomic Solutions for Hand & Wrist Comfort</h1>
-            <p>Expert reviews and guides to help you work and play without pain</p>
-            <a href="#reviews" class="cta-button">View Top Picks</a>
-            <p class="disclosure">As an Amazon Associate, we earn from qualifying purchases made through our links.</p>
-            <div class="featured-categories">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i>
+                    Trusted by thousands of professionals
+                </div>
+                <h1>Ergonomic Solutions for <span>Pain-Free</span> Productivity</h1>
+                <p>Expert reviews and recommendations to help you find the perfect ergonomic equipment. Work comfortably, live better.</p>
+                <div class="hero-buttons">
+                    <a href="#categories" class="btn btn-primary btn-lg">
+                        Explore Products <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#guides" class="btn btn-secondary btn-lg">
+                        Read Our Guides <i class="fas fa-book-open"></i>
+                    </a>
+                </div>
+                <p class="disclosure">As an Amazon Associate, we earn from qualifying purchases made through our links.</p>
+            </div>
+
+            <!-- Category Cards in Hero -->
+            <div id="categories" class="featured-categories">
                 <a href="mice.html" class="category-card">
-                    <i class="fas fa-mouse"></i>
+                    <div class="category-card-icon">
+                        <i class="fas fa-mouse"></i>
+                    </div>
                     <h3>Ergonomic Mice</h3>
-                    <p>Discover the best ergonomic mice for comfort and productivity</p>
+                    <p>Reduce strain with mice designed for natural hand positions and all-day comfort</p>
+                    <span class="arrow">View Collection <i class="fas fa-arrow-right"></i></span>
                 </a>
                 <a href="keyboards.html" class="category-card">
-                    <i class="fas fa-keyboard"></i>
-                    <h3>Keyboards</h3>
-                    <p>Find your perfect ergonomic keyboard for pain-free typing</p>
+                    <div class="category-card-icon">
+                        <i class="fas fa-keyboard"></i>
+                    </div>
+                    <h3>Ergonomic Keyboards</h3>
+                    <p>Type pain-free with split layouts and wrist-friendly designs</p>
+                    <span class="arrow">View Collection <i class="fas fa-arrow-right"></i></span>
                 </a>
                 <a href="wrist-supports.html" class="category-card">
-                    <i class="fas fa-hand-holding-heart"></i>
+                    <div class="category-card-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
                     <h3>Wrist Supports</h3>
-                    <p>Support your wrists and prevent pain during long work sessions</p>
+                    <p>Premium cushioning and support for long work sessions</p>
+                    <span class="arrow">View Collection <i class="fas fa-arrow-right"></i></span>
                 </a>
             </div>
         </div>
     </header>
 
     <main>
-        <section id="reviews" class="section">
+        <!-- Why Choose Ergonomic Section -->
+        <section class="section section-light">
             <div class="container">
-                <h2>Latest Reviews</h2>
-                <div class="review-grid">
-                    <!-- Reviews will be dynamically populated -->
+                <div class="section-header">
+                    <h2>Why Choose Ergonomic?</h2>
+                    <p>Investing in ergonomic equipment isn't just about comfort — it's about your long-term health and productivity</p>
+                </div>
+                <div class="benefits-grid">
+                    <div class="benefit">
+                        <div class="benefit-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Prevent Injuries</h3>
+                        <p>Reduce the risk of repetitive strain injuries, carpal tunnel syndrome, and chronic pain</p>
+                    </div>
+                    <div class="benefit">
+                        <div class="benefit-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Boost Productivity</h3>
+                        <p>Work longer and more efficiently without discomfort slowing you down</p>
+                    </div>
+                    <div class="benefit">
+                        <div class="benefit-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Long-term Wellness</h3>
+                        <p>Protect your hands, wrists, and posture for years of comfortable work</p>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- Getting Started Guides -->
         <section id="guides" class="section">
             <div class="container">
-                <h2>Getting Started Guides</h2>
+                <div class="section-header">
+                    <h2>Getting Started Guides</h2>
+                    <p>Learn how to set up your workspace for maximum comfort and efficiency</p>
+                </div>
                 <div class="guide-grid">
                     <article class="guide-card">
-                        <h3>Setting Up an Ergonomic Workspace</h3>
-                        <p>Learn how to create a comfortable workspace that prevents hand and wrist pain</p>
+                        <h3><i class="fas fa-desktop"></i> Setting Up an Ergonomic Workspace</h3>
+                        <p>Learn how to arrange your desk, monitor, and peripherals for optimal comfort and productivity. Includes tips for proper posture and positioning.</p>
                     </article>
                     <article class="guide-card">
-                        <h3>Choosing the Right Ergonomic Mouse</h3>
-                        <p>Expert tips for selecting the perfect ergonomic mouse for your needs</p>
+                        <h3><i class="fas fa-mouse"></i> Choosing the Right Ergonomic Mouse</h3>
+                        <p>Expert guidance on selecting the perfect ergonomic mouse based on your hand size, grip style, and work habits.</p>
                     </article>
                     <article class="guide-card">
-                        <h3>Wrist Pain Prevention Guide</h3>
-                        <p>Simple exercises and adjustments to prevent and reduce wrist pain</p>
+                        <h3><i class="fas fa-hand-paper"></i> Wrist Pain Prevention Guide</h3>
+                        <p>Simple stretches, exercises, and workspace adjustments to prevent and reduce wrist pain during long work sessions.</p>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="section">
+        <!-- About Section -->
+        <section id="about" class="section section-light">
             <div class="container">
-                <h2>About Us</h2>
-                <p>HandComfortHQ is run by someone who has personally experienced hand and wrist pain and found relief through ergonomic solutions. Our mission is to help others find the right products to make their work life more comfortable.</p>
+                <div class="section-header">
+                    <h2>About HandComfortHQ</h2>
+                </div>
+                <div class="about-content">
+                    <p>HandComfortHQ was founded by someone who has personally experienced the debilitating effects of hand and wrist pain from years of computer work. After finding relief through ergonomic solutions, our mission became clear: help others discover the products that can make their work life more comfortable and productive.</p>
+                    <p style="margin-top: 1.5rem;">Every product we recommend has been thoroughly researched and evaluated. We believe that everyone deserves to work without pain, and we're here to help you find the right solutions for your needs.</p>
+                </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>HandComfortHQ</h3>
-                    <p>Your trusted source for ergonomic solutions</p>
+                    <p>Your trusted source for expert ergonomic product reviews and workplace wellness guides.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
                 <div class="footer-section">
-                    <h3>Quick Links</h3>
+                    <h3>Product Categories</h3>
                     <ul>
-                        <li><a href="#reviews">Reviews</a></li>
-                        <li><a href="#guides">Guides</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="mice.html"><i class="fas fa-chevron-right"></i> Ergonomic Mice</a></li>
+                        <li><a href="keyboards.html"><i class="fas fa-chevron-right"></i> Keyboards</a></li>
+                        <li><a href="wrist-supports.html"><i class="fas fa-chevron-right"></i> Wrist Supports</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h3>Follow Us</h3>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#guides"><i class="fas fa-chevron-right"></i> Buying Guides</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="privacy-policy.html"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Stay updated with the latest ergonomic product reviews and wellness tips.</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 HandComfortHQ. All rights reserved.</p>
+                <p>&copy; 2025 HandComfortHQ. All rights reserved.</p>
                 <p>As an Amazon Associate, we earn from qualifying purchases.</p>
             </div>
         </div>
